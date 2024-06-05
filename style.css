@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.bottom-hr{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.45rem;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    color: rgb(143, 80, 202);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: rgb(143, 80, 202);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 275px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 18px 0;
+    color: white;
+}
+.footer-rights{
+    font-size: 10px;
+    margin-top:10px;
+}
+
+.contact-container {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-btn {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(18, 18, 62);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-btn .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(18, 18, 62);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.contact-dropdown.outlined {
+    border: 2px solid black;
+}
+
+.services{
+    font-size:100px;
+}
+
+.section-about {
+    display: flex;
+    justify-content: space-around;
+    margin-top:25px;
+    margin-right:90px;
+}
+
+.section-about img {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.section-about>div {
+    width: 40%;
+}
+
+.rightSection-about {
+    font-size: 0.93rem;
+}
+
+.leftSection-about img {
+    width: 80%;
+}
+
+.aboutme{
+    font-size: 35px;
+    margin-top: 20px;
+    align-items:center;
+    display:flex;
+    justify-content:space-around;
+}
+
+.section-education {
+    display: flex;
+    justify-content: space-around;
+    margin-top:25px;
+    margin-right:90px;
+}
+
+.section-education img {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.section-education>div {
+    width: 40%;
+}
+
+.rightSection-education {
+    font-size: 0.8rem;
+}
+
+.leftSection-education img {
+    width: 80%;
+}
+
+.education{
+    font-size: 35px;
+    margin-top: 20px;
+    align-items:center;
+    display:flex;
+    justify-content:space-around;
+}
