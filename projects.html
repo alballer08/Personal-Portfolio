@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,44 +15,156 @@
 
 <body>
     <header>
-        <nav>
-            <div class="left">Albert's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li>
-                        <div class="contact-container">
-                            <button class="contact-btn">
-                                Contact <span class="arrow">&#9660;</span>
-                            </button>
-                            <div class="contact-dropdown">
-                                <p>Email: <a href="mailto:albert.zhang@mcvts.org">albert.zhang@mcvts.org</a></p>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand">Albert's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="contact-container">
+                                <button class="contact-btn" id="contactBtn">
+                                    Contact <span class="arrow">&#9660;</span>
+                                </button>
+                                <div class="contact-dropdown" id="contactDropdown">
+                                    <p>Email: <a href="mailto:albert.zhang@mcvts.org">albert.zhang@mcvts.org</a></p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    </form>
-            </div>
-            </div>
-            </li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <main>
-       
-     
+        <div class="aboutme">
+            Projects
+        </div>
+
+        <section class="section-about">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="sodafier.jpg" class="img-fluid" width=500px height=300px alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="rightSection-title">
+                        <div class="soda-title">The SodaFier</div>
+                        <br>
+                        <div class="rightSection-about">
+                            During HackMCST, I worked with a group of my friends to create the SodaFier. The SodaFier is
+                            an up-and-coming soda company that has a variety of delicious flavors.
+                            <br><br>
+                            Flavors include Cola, Cream Soda, Ginger Ale, Grape, Oranagade, and Zesty Lime.
+                            <br>
+                            <br>
+                            As for the inner workings of the SodaFier, it included a Raspberry Pi, motors, and a bunch
+                            of wiring. The outside of the SodaFier had an LCD screen that would change text based on whether
+                            there was a cup under the soda dispensing position. Additionally, it had a button to start
+                            and stop soda dispensing.
+                            <br><br>
+                            My group and I started with an idea and manifested it into reality and we even placed on
+                            the podium at HackMCST 2024. This project has taught me to trust in the knowledge I've
+                            learned over the years and have fun.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="top-hr">
+
+        <section class="section-about">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="cyoa.png" class="img-fluid" width=500px height=300px alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="rightSection-title">
+                        <div class="soda-title">Haunted House CYOA</div>
+                        <br>
+                        <div class="rightSection-about">
+                            I created the Haunted House CYOA with my good friend Nicolas. Originally, we planned on
+                            creating a simple console-based program but it soon evolved into a semi-game with a custom
+                            GUI.
+                            <br><br>
+                            The main objective is to get out of the Haunted House. To do that, the player must
+                            collect equipment and defeat the boss. If the player does not collect enough equipment, the
+                            boss will defeat the player. The player gets pieces of equipment by killing weak mods or if the
+                            player is lucky will randomly receive one.
+                            <br>
+                            <br>
+                            The thought behind this game was to create a Haunted House where you could choose your own
+                            adventure. There are countless outcomes and many different ways to win.
+                            <br><br>
+                            Creating this game inspired me to continue my computer science journey, and it allowed me to
+                            learn and improve my coding skills.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="top-hr">
+
+        <section class="section-about">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="cipher.png" class="img-fluid" width=500px height=300px alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="rightSection-title">
+                        <div class="soda-title">Caesar Cipher Encryption and Decryption Tool</div>
+                        <br>
+                        <div class="rightSection-about">
+                            Encryption is essential for securing sensitive information and preventing
+                            unauthorized access.
+                            <br><br>
+                            My CaesarCipher Encryption and Decryption Tool lets people to encrypt important
+                            information with a key, preventing unwanted information leaks. When the user wants to read
+                            the information again, the user can use the decryption tool to decrypt the information with
+                            the key.
+                            <br>
+                            <br>
+                            My Caesar cipher also includes encryption and decryption of numbers that normal Caesar ciphers do
+                            not have.
+                            <br><br>
+                            This project helped me step into the world of cybersecurity and broadened my understanding
+                            of the topic. I hope to continue to improve my skills through meaningful projects like this.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="bottom-hr">
 
     </main>
-    <footer>
-        <div class="footer-bottom">
-            <div class="footer-rights">Copyright &#169; 2024 albertsportfolio.com | All rights reserved</div>
+    <footer class="bg-custom text-center text-white">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-rights">Copyright &#169; 2024 albertsportfolio.com | All rights reserved</div>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <!-- Setup and start animation! -->
 </body>
 
 </html>
