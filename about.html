@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +15,71 @@
 
 <body>
     <header>
-        <nav>
-            <div class="left">Albert's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li>
-                        <div class="contact-container">
-                            <button class="contact-btn">
-                                Contact <span class="arrow">&#9660;</span>
-                            </button>
-                            <div class="contact-dropdown">
-                                <p>Email: <a href="mailto:albert.zhang@mcvts.org">albert.zhang@mcvts.org</a></p>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand">Albert's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="contact-container">
+                                <button class="contact-btn" id="contactBtn">
+                                    Contact <span class="arrow">&#9660;</span>
+                                </button>
+                                <div class="contact-dropdown" id="contactDropdown">
+                                    <p>Email: <a href="mailto:albert.zhang@mcvts.org">albert.zhang@mcvts.org</a></p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    </form>
-            </div>
-            </div>
-            </li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="aboutme">
             About Me
         </div>
         <section class="section-about">
-            <div class="leftSection-about">
-                <img src="me.jpeg" width="100" height="400" alt="">
-            </div>
-            <div class="rightSection-about">
-                My name is Albert Zhang, and I currently attend the Morris County School of Technology, where I am
-                enrolled in the Computer Science Academy. I am an Asian-American citizen of the United States of America
-                and currently live in New Jersey.
-                <br><br>
-                I have been learning computer science for the past two years and want
-                to continue to learn more. Using my knowledge in computer science, I have created numerous web pages,
-                applications, and programs for various uses.
-                <br>
-                <br>
-                Outside of comptuer science, I enjoy playing basketball and video games. I am currently the starting
-                point guard on my schools Varsity basketball team. Additionally, I enjoy playing video games like
-                Valorant and Fortnite.
-                <br><br>
-                My dream is to become a computer scientist who specializes are
-                in various fields. I want to be an all-rounder and learn all their is about computer science.
-
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="me.jpeg" class="img-fluid" width=400px height=400px alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="rightSection-about">
+                        My name is Albert Zhang, and I currently attend the Morris County School of Technology, where I am
+                        enrolled in the Computer Science Academy. I am an Asian-American citizen of the United States of America
+                        and currently live in New Jersey.
+                        <br><br>
+                        I have been learning computer science for the past two years and want
+                        to continue to learn more. Using my knowledge in computer science, I have created numerous web pages,
+                        applications, and programs for various uses.
+                        <br>
+                        <br>
+                        Outside of comptuer science, I enjoy playing basketball and video games. I am currently the starting
+                        point guard on my schools Varsity basketball team. Additionally, I enjoy playing video games like
+                        Valorant and Fortnite.
+                        <br><br>
+                        My dream is to become a computer scientist who specializes are
+                        in various fields. I want to be an all-rounder and learn all their is about computer science.
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -73,48 +89,55 @@
             Education
         </div>
         <section class="section-education">
-            <div class="leftSection-education">
-                <img src="mcst.jpeg" width="300" height="500" alt="">
-            </div>
-            <div class="rightSection-education">
-                Over the past two years, I have immersed myself in the study
-                of computer science at the Morris County School of Technology, gaining proficiency in a variety of
-                programming languages. My journey began with
-                Java, where I learned the fundamentals of computer programming and honed my skills in writing
-                efficient and scalable code.
-                <br>
-                <br>
-                In addition to C++, I have also become proficient in HTML, CSS, and JavaScript, which have enabled me to
-                build dynamic and responsive web applications. Through these technologies, I have developed a solid
-                understanding of web development, from front-end design to back-end logic.
-                <br>
-                <br>
-                Furthermore, I have explored C++, allowing me to appreciate the versatility and robustness of this
-                language in various applications, from desktop to mobile development. My experience with Java has also
-                reinforced my understanding of object-oriented principles and design patterns.
-                <br>
-                <br>
-                Throughout my time in the Computer Science Academy, I have worked on numerous projects that have
-                challenged me to think critically and solve complex problems. These projects have not only enhanced my
-                technical skills but also taught me the importance of teamwork, communication, and continuous learning.
-                <br>
-                <br>
-                As I continue to learn about Computer Science, I am excited to further deepen my knowledge and explore
-                new technologies. My goal is to leverage my skills to contribute to innovative projects and make a
-                meaningful impact in the field of technology.
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="mcst.jpeg" class="img-fluid" width=400px height=400px alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="rightSection-education">
+                        Over the past two years, I have immersed myself in the study
+                        of computer science at the Morris County School of Technology, gaining proficiency in a variety of
+                        programming languages. My journey began with
+                        Java, where I learned the fundamentals of computer programming and honed my skills in writing
+                        efficient and scalable code.
+                        <br>
+                        <br>
+                        In addition to C++, I have also become proficient in HTML, CSS, and JavaScript, which have enabled me to
+                        build dynamic and responsive web applications. Through these technologies, I have developed a solid
+                        understanding of web development, from front-end design to back-end logic.
+                        <br>
+                        <br>
+                        Furthermore, I have explored C++, allowing me to appreciate the versatility and robustness of this
+                        language in various applications, from desktop to mobile development. My experience with Java has also
+                        reinforced my understanding of object-oriented principles and design patterns.
+                        <br>
+                        <br>
+                        Throughout my time in the Computer Science Academy, I have worked on numerous projects that have
+                        challenged me to think critically and solve complex problems. These projects have not only enhanced my
+                        technical skills but also taught me the importance of teamwork, communication, and continuous learning.
+                        <br>
+                        <br>
+                        As I continue to learn about Computer Science, I am excited to further deepen my knowledge and explore
+                        new technologies. My goal is to leverage my skills to contribute to innovative projects and make a
+                        meaningful impact in the field of technology.
+                    </div>
+                </div>
             </div>
         </section>
 
         <hr class="bottom-hr">
         
     </main>
-    <footer>
-        <div class="footer-bottom">
-            <div class="footer-rights">Copyright &#169; 2024 albertsportfolio.com | All rights reserved</div>
+    <footer class="bg-custom text-center text-white">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-rights">Copyright &#169; 2024 albertsportfolio.com | All rights reserved</div>
+            </div>
+        </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <!-- Setup and start animation! -->
 </body>
 
 </html>
