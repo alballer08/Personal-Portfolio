@@ -1,6 +1,4 @@
 // js for the typing on the screen animation
-
-
 document.addEventListener('DOMContentLoaded',function(){  
 var typed = new Typed('#element', {
     strings: ['Cybersecuritist.', 'Software Engineer.', 'Web Developer.'],
@@ -35,4 +33,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
